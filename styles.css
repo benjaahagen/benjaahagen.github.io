@@ -1,0 +1,244 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-wrapper img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.contact-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.contact-wrapper h1 {
+  color: lightseagreen;
+  text-align: center;
+}
+
+.contact-wrapper label {
+  display: block;
+  margin-top: 20px;
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-wrapper button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.contact-wrapper button:hover {
+  background-color: darkcyan;
+}
+
+/* Add this to your existing styles.css file */
+
+/* Projects Page */
+
+.content-wrapper {
+  padding: 40px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.project-list li {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.project-list li:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.project-list li img {
+  display: block;
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: contain; /* This will ensure the image covers the full width and height without distortion */
+  margin-bottom: 20px;
+}
+
+.project-list li h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  height: 75px; /* Adjust as needed */
+  overflow: hidden; /* This will hide any overflow text */
+}
+
+.project-list li p {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  height: 200px; /* Adjust as needed */
+  overflow: auto; /* This will add a scrollbar if the text is too long */
+}
+
+.project-list li a {
+  color: lightseagreen;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.project-list li a:hover {
+  color: darkcyan;
+}
